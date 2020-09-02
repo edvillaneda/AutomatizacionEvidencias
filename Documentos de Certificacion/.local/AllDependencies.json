@@ -230,15 +230,6 @@
           "lib/net45/ICSharpCode.SharpZipLib.dll": {}
         }
       },
-      "System.Globalization/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
       "System.IO.Abstractions/3.0.10": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1247,74 +1238,6 @@
         "sharpziplib.nuspec"
       ]
     },
-    "System.Globalization/4.3.0": {
-      "sha512": "kYdVd2f2PAdFGblzFswE4hkNANJBKRmsfa2X5LG2AcWE1c7/4t0pYae1L8vfZ5xvE2nK/R9JprtToA61OSHWIg==",
-      "type": "package",
-      "path": "system.globalization/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Globalization.dll",
-        "ref/netcore50/System.Globalization.xml",
-        "ref/netcore50/de/System.Globalization.xml",
-        "ref/netcore50/es/System.Globalization.xml",
-        "ref/netcore50/fr/System.Globalization.xml",
-        "ref/netcore50/it/System.Globalization.xml",
-        "ref/netcore50/ja/System.Globalization.xml",
-        "ref/netcore50/ko/System.Globalization.xml",
-        "ref/netcore50/ru/System.Globalization.xml",
-        "ref/netcore50/zh-hans/System.Globalization.xml",
-        "ref/netcore50/zh-hant/System.Globalization.xml",
-        "ref/netstandard1.0/System.Globalization.dll",
-        "ref/netstandard1.0/System.Globalization.xml",
-        "ref/netstandard1.0/de/System.Globalization.xml",
-        "ref/netstandard1.0/es/System.Globalization.xml",
-        "ref/netstandard1.0/fr/System.Globalization.xml",
-        "ref/netstandard1.0/it/System.Globalization.xml",
-        "ref/netstandard1.0/ja/System.Globalization.xml",
-        "ref/netstandard1.0/ko/System.Globalization.xml",
-        "ref/netstandard1.0/ru/System.Globalization.xml",
-        "ref/netstandard1.0/zh-hans/System.Globalization.xml",
-        "ref/netstandard1.0/zh-hant/System.Globalization.xml",
-        "ref/netstandard1.3/System.Globalization.dll",
-        "ref/netstandard1.3/System.Globalization.xml",
-        "ref/netstandard1.3/de/System.Globalization.xml",
-        "ref/netstandard1.3/es/System.Globalization.xml",
-        "ref/netstandard1.3/fr/System.Globalization.xml",
-        "ref/netstandard1.3/it/System.Globalization.xml",
-        "ref/netstandard1.3/ja/System.Globalization.xml",
-        "ref/netstandard1.3/ko/System.Globalization.xml",
-        "ref/netstandard1.3/ru/System.Globalization.xml",
-        "ref/netstandard1.3/zh-hans/System.Globalization.xml",
-        "ref/netstandard1.3/zh-hant/System.Globalization.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.globalization.4.3.0.nupkg.sha512",
-        "system.globalization.nuspec"
-      ]
-    },
     "System.IO.Abstractions/3.0.10": {
       "sha512": "15N2bCO8DLGzrnDyPwQ0653bTCmyJW4Ajw6yeFkJR74VptVvnGINcU5ibX4isxGkvi+YevK7JyVyjiJh6X91kA==",
       "type": "package",
@@ -1855,7 +1778,6 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
-      "System.Globalization >= 4.3.0 <= 4.3.0",
       "UiPath.Excel.Activities >= 2.9.0-preview <= 2.9.0-preview",
       "UiPath.Mail.Activities >= 1.9.0-preview <= 1.9.0-preview",
       "UiPath.System.Activities >= 20.6.1-preview <= 20.6.1-preview",
@@ -1863,24 +1785,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\edier\\.nuget\\packages\\": {}
+    "C:\\Users\\edvillaneda\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Documentos de Certificacion",
       "projectName": "Documentos de Certificacion",
-      "projectPath": "D:\\Edier Andres\\Documents\\UiPath\\Documentos de Certificacion\\.local",
-      "packagesPath": "C:\\Users\\edier\\.nuget\\packages\\",
-      "outputPath": "D:\\Edier Andres\\Documents\\UiPath\\Documentos de Certificacion\\.local"
+      "projectPath": "C:\\Users\\edvillaneda\\Documents\\UiPath\\AutomatizacionEvidencias\\Documentos de Certificacion\\.local",
+      "packagesPath": "C:\\Users\\edvillaneda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edvillaneda\\Documents\\UiPath\\AutomatizacionEvidencias\\Documentos de Certificacion\\.local"
     },
     "frameworks": {
       "net461": {
         "dependencies": {
-          "System.Globalization": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[4.3.0, 4.3.0]"
-          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
