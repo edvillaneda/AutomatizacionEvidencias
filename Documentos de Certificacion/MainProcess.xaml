@@ -565,7 +565,7 @@
                                     </Assign.Value>
                                   </Assign>
                                   <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Crear carpeta salida" sap:VirtualizedContainerService.HintSize="717,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[ruta]" />
-                                  <ui:CopyFile ContinueOnError="{x:Null}" Destination="[ruta + titulo + &quot;.xlsx&quot;]" DisplayName="Copiar Excel plantiulla" sap:VirtualizedContainerService.HintSize="717,157" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="GRCpl96_SoporteEvidencias.xlsx" />
+                                  <ui:CopyFile ContinueOnError="{x:Null}" Destination="[ruta + titulo + &quot;.xlsx&quot;]" DisplayName="Copiar Excel plantilla" sap:VirtualizedContainerService.HintSize="717,157" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="GRCpl96_SoporteEvidencias.xlsx" />
                                   <Assign sap:VirtualizedContainerService.HintSize="717,60" sap2010:WorkflowViewState.IdRef="Assign_42">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="sg:TextInfo">[myTI]</OutArgument>
@@ -626,7 +626,7 @@
                                                       </Sequence>
                                                     </If.Then>
                                                     <If.Else>
-                                                      <Sequence DisplayName="Procesar Modulo" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                                      <Sequence DisplayName="Procesar Modulo" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -641,7 +641,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                           <If.Then>
-                                                            <Sequence DisplayName="Procesar Excel salida" sap:VirtualizedContainerService.HintSize="563,1532" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                                            <Sequence DisplayName="Procesar Excel salida" sap:VirtualizedContainerService.HintSize="563,1659" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -651,9 +651,9 @@
                                                               <ui:ExcelCopyPasteRange DestinationCell="[&quot;A&quot;+ indice.ToString]" DestinationSheet="[sheet]" DisplayName="Copiar Formato Titulo" sap:VirtualizedContainerService.HintSize="521,22" sap2010:WorkflowViewState.IdRef="ExcelCopyPasteRange_1" SheetName="[sheet]" SourceRange="A6:R6" />
                                                               <ui:ExcelCopyPasteRange DestinationCell="[&quot;B&quot;+ (indice+2).ToString]" DestinationSheet="[sheet]" DisplayName="Copiar formato cuadro" sap:VirtualizedContainerService.HintSize="521,22" sap2010:WorkflowViewState.IdRef="ExcelCopyPasteRange_2" SheetName="[sheet]" SourceRange="B8:H12" />
                                                               <ui:ExcelWriteCell Cell="[&quot;A&quot; + indice.ToString]" DisplayName="Escribir Caso" sap:VirtualizedContainerService.HintSize="521,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="[sheet]" Text="[row(1).ToString]" />
-                                                              <If Condition="[not row(2).ToString  = &quot;&quot;]" DisplayName="Validar fila" sap:VirtualizedContainerService.HintSize="521,1089" sap2010:WorkflowViewState.IdRef="If_11">
+                                                              <If Condition="[not row(2).ToString  = &quot;&quot;]" DisplayName="Validar fila" sap:VirtualizedContainerService.HintSize="521,1216" sap2010:WorkflowViewState.IdRef="If_11">
                                                                 <If.Then>
-                                                                  <Sequence DisplayName="Escribir en excel" sap:VirtualizedContainerService.HintSize="376,941" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                                                  <Sequence DisplayName="Escribir en excel" sap:VirtualizedContainerService.HintSize="376,1068" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -666,6 +666,22 @@
                                                                     <ui:ExcelWriteCell Cell="[&quot;F&quot;+ (indice+3).ToString]" DisplayName="Escribir Caso de Prueba" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="[sheet]" Text="[row(6).ToString]" />
                                                                     <ui:ExcelWriteCell Cell="[&quot;G&quot;+ (indice+3).ToString]" DisplayName="Escribir Resultado Esperado" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_7" SheetName="[sheet]" Text="[row(7).ToString]" />
                                                                     <ui:ExcelWriteCell Cell="[&quot;H&quot;+ (indice+3).ToString]" DisplayName="Escribir Observaciones" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_8" SheetName="[sheet]" Text="[row(8).ToString]" />
+                                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke CrearImagen workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="CrearImagen.xaml">
+                                                                      <ui:InvokeWorkflowFile.Arguments>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="in_id">
+                                                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="row(2).ToString" />
+                                                                        </InArgument>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="in_ruta">
+                                                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta" />
+                                                                        </InArgument>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="in_criterio">
+                                                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="row(3).ToString" />
+                                                                        </InArgument>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="in_sheet">
+                                                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="sheet" />
+                                                                        </InArgument>
+                                                                      </ui:InvokeWorkflowFile.Arguments>
+                                                                    </ui:InvokeWorkflowFile>
                                                                   </Sequence>
                                                                 </If.Then>
                                                               </If>
